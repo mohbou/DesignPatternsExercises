@@ -17,4 +17,11 @@ public class RemoteController {
     public void insertNewOffCommand(Command command) {
         turnOffCommands.add(command);
     }
+
+    public void pressButtonOn(int buttonIndex) {
+        turnOnCommands.get(buttonIndex).execute();
+    }
+    public void pressButtonOff(int buttonIndex) {
+        turnOffCommands.get(buttonIndex).execute();
+    }
 }
