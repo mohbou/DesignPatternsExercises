@@ -1,4 +1,7 @@
 package main.bridgepattern.example1;
 
-public class EntertainmentDevice {
+public interface EntertainmentDevice {
+
+    public void buttonFivePressed();
+    public void buttonSixPressed();
 }
