@@ -1,4 +1,4 @@
-package main.observerPattern;
+package main.observerPattern.example1;
 
 public class ObserverConcrete implements Observer {
 

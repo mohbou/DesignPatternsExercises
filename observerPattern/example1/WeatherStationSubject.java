@@ -1,4 +1,4 @@
-package main.observerPattern;
+package main.observerPattern.example1;
 
 public interface WeatherStationSubject {
     public void addObserver(Observer observer);
