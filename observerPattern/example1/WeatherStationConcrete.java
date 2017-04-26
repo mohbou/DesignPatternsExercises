@@ -3,6 +3,7 @@ package main.observerPattern.example1;
 import java.util.ArrayList;
 import java.util.List;
 
+//observable
 public class WeatherStationConcrete implements WeatherStationSubject {
 
     private List<Observer> observers =  new ArrayList<>();
