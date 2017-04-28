@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 //aggregate
-public class Facebook {
+public class Facebook implements SocialNetworking {
 
     private List<String> users;
 
@@ -18,5 +18,10 @@ public class Facebook {
 
 
 
+    }
+
+    @Override
+    public Iterator createIterator() {
+        return null;
     }
 }

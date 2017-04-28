@@ -1,7 +1,7 @@
 package main.iteratorpattern.example1;
 
 //aggregate
-public class Twitter {
+public class Twitter  implements SocialNetworking{
 
     private String [] users;
     public Twitter() {
@@ -9,5 +9,10 @@ public class Twitter {
         for (int i = 0; i < 20; i++) {
             users[i] = "John"+i;
         }
+    }
+
+    @Override
+    public Iterator createIterator() {
+        return null;
     }
 }
