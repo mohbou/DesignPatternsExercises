@@ -1,5 +1,6 @@
 package main.iteratorpattern.example1;
 
+//aggregate
 public class Twitter {
 
     private String [] users;
