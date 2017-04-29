@@ -22,6 +22,6 @@ public class Facebook implements SocialNetworking {
 
     @Override
     public Iterator createIterator() {
-        return null;
+        return new FacebookIterator(users);
     }
 }

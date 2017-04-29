@@ -13,6 +13,6 @@ public class Twitter  implements SocialNetworking{
 
     @Override
     public Iterator createIterator() {
-        return null;
+        return new TwitterIterator(users);
     }
 }
