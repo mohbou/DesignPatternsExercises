@@ -8,13 +8,27 @@ public class Main {
     }
 
     public static void main(String[] args) {
-        HelloWorldGreeting greeting = new HelloWorldGreeting();
         Main main = new Main();
+
+
+        //classic way in Java 7
+        Greeting greeting = new HelloWorldGreeting();
         main.greeter(greeting);
 
-        //first example
-        Mylambda myLamdbaFuntion = () -> System.out.println("Hello world");
+        //other way in Java7
+        Greeting greeting1 =  new Greeting() {
+            @Override
+            public void perform() {
+                System.out.println("Inner class way of Hello world");
+            }
+        };
+       main.greeter(greeting1);
 
+
+        //first lambda example
+        Mylambda myLamdbaFuntion = () -> System.out.println("Hello world Lambda");
+
+        myLamdbaFuntion.perform();
         //second example
         Myadd addFunction = (a,b) -> a+b;
     }
