@@ -31,7 +31,7 @@ public class Unit1Exercise {
 
     //sort by Last Name
     public static void sortList(List<Person> list) {
-        Collections.sort(list, (Person o1,Person o2) -> o1.getLastName().compareTo(o2.getLastName()));
+        Collections.sort(list, (o1,o2) -> o1.getLastName().compareTo(o2.getLastName()));
 
     }
 
