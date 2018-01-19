@@ -26,7 +26,8 @@ public class Main {
 
 
         //first lambda example
-        Mylambda myLamdbaFuntion = () -> System.out.println("Hello world Lambda");
+        Greeting myLamdbaFuntion = () -> System.out.println("Hello world Lambda Called through the perform method");
+        main.greeter(myLamdbaFuntion);
 
         myLamdbaFuntion.perform();
         //second example
